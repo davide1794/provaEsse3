@@ -1,11 +1,11 @@
-import {Link, Model} from "./model";
+import {Link} from "./model";
 
-export class Student extends Model {
+export class Student {
     firstName: string;
     lastName: string;
     birthYear: string;
 
-    _links: StudentLink = new StudentLink();
+    _links?: StudentLink = new StudentLink();
 }
 
 class StudentLink {
